@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+  <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css"/>
+  <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/jquery-bar-rating/fontawesome-stars-o.css">
+  <link rel="stylesheet" href="vendors/jquery-bar-rating/fontawesome-stars.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="dashboard.php"><img src="images/logo.png" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="dashboard.php"><img src="images/logo-mini.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>       
+        <ul class="navbar-nav navbar-nav-right">           
+          <li class="nav-item dropdown d-flex mr-4 ">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-cog"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Settings</p>              
+              <a class="dropdown-item preview-item" href="logout.php">
+                  <i class="icon-inbox"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="user-profile">
+          <div class="user-image">
+            <img src="images/faces/face28.png">
+          </div>
+          <div class="user-name">
+              Shonu Uncensored
+          </div>
+          <div class="user-designation">
+              Developer
+          </div>
+        </div>
+        				<ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.php">
+              <i class="icon-box menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+		            <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-disc menu-icon"></i>
+              <span class="menu-title">WinGo Manager</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="wingo1min.php">WinGo 1 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="wingo3min.php">WinGo 3 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="wingo5min.php">WinGo 5 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="wingo10min.php">WinGo 10 Min</a></li>
+              </ul>
+            </div>
+          </li>
+		  		  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic-1" aria-expanded="false" aria-controls="ui-basic-1">
+              <i class="icon-disc menu-icon"></i>
+              <span class="menu-title">K3 Manager</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic-1">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="k31min.php">K3 1 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="k33min.php">K3 3 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="k35min.php">K3 5 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="k310min.php">K3 10 Min</a></li>
+              </ul>
+            </div>
+          </li>
+		  		  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic-2" aria-expanded="false" aria-controls="ui-basic-2">
+              <i class="icon-disc menu-icon"></i>
+              <span class="menu-title">5D Manager</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic-2">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="5d1min.php">5D 1 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="5d3min.php">5D 3 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="5d5min.php">5D 5 Min</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="5d10min.php">5D 10 Min</a></li>
+              </ul>
+            </div>
+          </li>
+		  		  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic-3" aria-expanded="false" aria-controls="ui-basic-3">
+              <i class="icon-book menu-icon"></i>
+              <span class="menu-title">Finance</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic-3">
+     <!--         <ul class="nav flex-column sub-menu">-->
+     <!--           <li class="nav-item"> <a class="nav-link" href="addupi.php">Add Upi</a></li>-->
+     <!--         </ul>-->
+			  <!--<ul class="nav flex-column sub-menu">-->
+     <!--           <li class="nav-item"> <a class="nav-link" href="addusdt.php">Add Usdt</a></li>-->
+     <!--         </ul>-->
+			  <!--<ul class="nav flex-column sub-menu">-->
+     <!--           <li class="nav-item"> <a class="nav-link" href="addupiimg.php">Add Upi Image</a></li>-->
+     <!--         </ul>			  -->
+			  <!--<ul class="nav flex-column sub-menu">-->
+     <!--          <li class="nav-item"> <a class="nav-link" href="addimgusdt_2.php">Add Usdt Image</a></li>-->
+     <!--         </ul>-->
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="deposit_update.php">Deposit Update</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="manage_withdraw.php">Withdraw Apply</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="withdraw_accept_list.php">Withdraw Sent</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="withdraw_reject_list.php">Withdraw Reject</a></li>
+              </ul>
+            </div>
+          </li>
+		  		  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic-4" aria-expanded="false" aria-controls="ui-basic-4">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">Manage Game</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic-4">
+              <!--  <ul class="nav flex-column sub-menu">-->
+              <!--  <li class="nav-item"> <a class="nav-link" href="adminpass.php">Admin Password</a></li>-->
+              <!--</ul>-->
+			  <!--<ul class="nav flex-column sub-menu">-->
+     <!--           <li class="nav-item"> <a class="nav-link" href="updatejet.php">Jet Max Value</a></li>-->
+     <!--         </ul>-->
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="manage_user.php">Users</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="manage_salary.php">Daily Salary</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="addgiftcode.php">Gift Code</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="addtelegram.php">Telegram</a></li>
+              </ul>
+			  <!--<ul class="nav flex-column sub-menu">-->
+     <!--           <li class="nav-item"> <a class="nav-link" href="addadmin.php">Add Admin</a></li>-->
+     <!--         </ul>-->
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="demouser.php">Demo User</a></li>
+              </ul>
+			  <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="agentuser.php">Agent User</a></li>
+              </ul>
+            </div>
+          </li>
+		  		 <li class="nav-item">
+                    <a href="https://ntrmall.site" class="nav-link">
+                        <i class="nav-icon fa fa-sign-out" aria-hidden="true"></i>
+                        <p>Go To Website</p>
+                    </a>
+                </li>
+        </ul>      </nav>
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12 mb-4 mb-xl-0">
+              <h4 class="font-weight-bold text-dark">Hi, welcome back!</h4>
+              <p class="font-weight-normal mb-2 text-muted">November 20, 2024</p>
+            </div>
+          </div>
+		  		  <div class="row">
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Today User Join</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					0					</h4>
+                </div>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Today's Recharge</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					200					</h4>
+                </div>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Today's Withdrawal</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					5,000					</h4>
+                </div>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">User Balance</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					5,098,241,607.44					</h4>
+                </div>
+				<a href="manage_user.php">
+                  <div class="panel-footer">
+                    <span class="pull-left" style="color: white;">See in Detail</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Total Users</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					2					</h4>
+                </div>
+				<a href="manage_user.php">
+                  <div class="panel-footer">
+                    <span class="pull-left" style="color: white;">See in Detail</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Pending Recharge</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					10,000					</h4>
+                </div>
+				<a href="deposit_update.php">
+                  <div class="panel-footer">
+                    <span class="pull-left" style="color: white;">See in Detail</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Success Recharge</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					6,375,522					</h4>
+                </div>
+				<a href="deposit_update.php">
+                  <div class="panel-footer">
+                    <span class="pull-left" style="color: white;">See in Detail</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Total Withdrawal</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					507,002					</h4>
+                </div>
+				<a href="withdraw_accept_list.php">
+                  <div class="panel-footer">
+                    <span class="pull-left" style="color: white;">See in Detail</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Withdrawal Requests</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					2,088,091					</h4>
+                </div>
+				<a href="manage_withdraw.php">
+                  <div class="panel-footer">
+                    <span class="pull-left" style="color: white;">See in Detail</span>
+                    <div class="clearfix"></div>
+                  </div>
+                </a>
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Today's total bet</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					82,873,474.00					</h4>
+                </div>				
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Today's total win</p>
+					<h4 class="text-amount" style="text-align:left">
+					 
+					342,590,862.00					</h4>
+                </div>				
+            </div>
+			<div style="background-color: #ec37fc; color: white; padding: 20px; margin: 10px;"
+              class="dashboard_box blue_bg col-md-3 border-radius">
+                <div class="title">
+                  <p class="text-title" style="text-align:left">Today's profit</p>
+					<h4 class="text-amount" style="text-align:left">					
+					-259717388					</h4>
+                </div>				
+            </div>
+		  </div>
+		  		</div>
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Powered by  bigplayhub</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script src="vendors/base/vendor.bundle.base.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
